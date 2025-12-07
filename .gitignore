@@ -1,0 +1,45 @@
+# macOS system files
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Video and large media assets
+*.mp4
+*.mov
+*.avi
+*.mkv
+videos/
+data/
+
+# Build/compiled files
+build/
+dist/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# Logs
+*.log
+logs/
+
+# Virtual environments
+.env/
+venv/
+
+# IDE/project files
+.vscode/
+.idea/
+
+# Generated output
+output/
+results/
+
+# Temporary files
+*.zip
+*.tar
+*.tar.gz
+*.tmp
