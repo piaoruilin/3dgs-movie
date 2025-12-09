@@ -8,3 +8,20 @@ mkdir -p reconstruction/video_data_frames/obj-red/input
 ffmpeg -i video_data/obj-hall.mp4 -vf fps=8 reconstruction/video_data_frames/obj-hall/input/frame_%04d.jpg
 ffmpeg -i video_data/obj-toy.mp4 -vf fps=8 reconstruction/video_data_frames/obj-toy/input/frame_%04d.jpg
 ffmpeg -i video_data/obj-red.mp4 -vf fps=8 reconstruction/video_data_frames/obj-red/input/frame_%04d.jpg
+
+cd /Users/piaoruilin/Desktop/DATASCIENCE/2025-2/3dgs-movie
+
+# For obj_hall
+colmap automatic_reconstructor \
+  --image_path reconstruction/video_data_frames/obj-hall/input \
+  --workspace_path reconstruction/video_data_frames/obj-hall/colmap_output
+
+# For obj_toy
+colmap automatic_reconstructor \
+  --image_path reconstruction/video_data_frames/obj-toy/input \
+  --workspace_path reconstruction/video_data_frames/obj-toy/colmap_output
+
+# For obj_red
+colmap automatic_reconstructor \
+  --image_path reconstruction/video_data_frames/obj-red/input \
+  --workspace_path reconstruction/video_data_frames/obj-red/colmap_output
