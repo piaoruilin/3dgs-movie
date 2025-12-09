@@ -4,6 +4,9 @@ mkdir -p reconstruction/obj_model/obj_alien_3dgs/input
 mkdir -p reconstruction/obj_model/obj_voldy_3dgs/input
 ffmpeg -i data/obj_voldy.mp4 -vf fps=5 reconstruction/obj_model/obj_voldy_3dgs/input/frame_%04d.jpg
 
+mkdir -p reconstruction/scene_model/scene_3dgs/input
+ffmpeg -i data/scene.mp4 -vf fps=5 reconstruction/scene_model/scene_3dgs/input/frame_%04d.jpg
+
 #virtual environment for 3DGS
 python3 -m venv venv_gs
 source venv_gs/bin/activate
