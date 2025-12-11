@@ -1,7 +1,9 @@
 # 3D Gaussian Splatting Reconstruction
 
 This repository contains the full pipeline and implementation for creating a short animated mini-movie using dynamic 3D Gaussian Splatting (3DGS). The project includes data capture, 3D reconstruction, scene and object modeling, dynamic sequence design, and rendering. All reconstruction and training were performed using Google Colab with Python 3.11+ and the `gsplat`/Nerfstudio toolset. 
+
 Korea University Course DATA302 - Computer Vision and Its Applications (기초컴퓨터비전과응용)
+
 ---
 
 ## 1. Overview
